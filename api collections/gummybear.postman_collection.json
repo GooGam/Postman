@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "f3fdebc1-a75b-4b96-a8e6-c382aea0b558",
+		"name": "gummybear",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20287817"
+	},
+	"item": [
+		{
+			"name": "gummy-bears list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gummy-bears query list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears?gluten_free=true&expiration_date=2021-06-10T14:00:00.000Z",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears"
+					],
+					"query": [
+						{
+							"key": "gluten_free",
+							"value": "true"
+						},
+						{
+							"key": "expiration_date",
+							"value": "2021-06-10T14:00:00.000Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gummy-bears by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gummy-bears by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Crisps\",\r\n    \"amount\": 1,\r\n    \"colour\": \"golden\",\r\n    \"flavour\": \"chippies\",\r\n    \"vegan\": true,\r\n    \"manufacture_date\": \"2017-07-09 14:00:00.000Z\",\r\n    \"expiration_date\": \"2021-06-10 14:00:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/aC3Xd3qYHfRyEm5ak9EZ",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"aC3Xd3qYHfRyEm5ak9EZ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gummy-bears by id non-nullables only",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 12,\r\n    \"colour\": \"green\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gummy-bears",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Crisps\",\r\n    \"amount\": 1,\r\n    \"colour\": \"white\",\r\n    \"flavour\": \"potato\",\r\n    \"vegan\": true,\r\n    \"manufacture_date\": \"2022-07-19 14:00:00.000Z\",\r\n    \"expiration_date\": \"2024-06-10 14:00:00.000Z\",\r\n    \"gluten_free\": true,\r\n    \"transparency\": 90\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gummy-bears by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/aC3Xd3qYHfRyEm5ak9EZ",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"aC3Xd3qYHfRyEm5ak9EZ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3/sellers",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers query list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3/sellers?name=Willy Wonkas&position_type=Manufacturer",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3",
+						"sellers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Willy Wonkas"
+						},
+						{
+							"key": "position_type",
+							"value": "Manufacturer"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/0XpXwltsyAc09jP0oYXC/sellers/1I9v5KZF6XpQSnVGBPLO",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"0XpXwltsyAc09jP0oYXC",
+						"sellers",
+						"1I9v5KZF6XpQSnVGBPLO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"fatshark\",\r\n    \"email\": \"fatshark@bunnys.com\",\r\n    \"position_type\": \"Manufacturer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3/sellers/0EPMlsRxrUvZgELPsRPn",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3",
+						"sellers",
+						"0EPMlsRxrUvZgELPsRPn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers by id non-nullables only",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Sebs Icecream\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/gummy-bears/byiwpSWIPyw6cfWq3lN3/sellers/iUXfxXtAaYusUX9TCM1X",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3",
+						"sellers",
+						"iUXfxXtAaYusUX9TCM1X"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"shark\",\r\n    \"email\" : \"shark@fish.com\",\r\n    \"position_type\" : \"Importer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3/sellers",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3",
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sellers by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/v1/gummy-bears/byiwpSWIPyw6cfWq3lN3/sellers/0EPMlsRxrUvZgELPsRPn",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"v1",
+						"gummy-bears",
+						"byiwpSWIPyw6cfWq3lN3",
+						"sellers",
+						"0EPMlsRxrUvZgELPsRPn"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
